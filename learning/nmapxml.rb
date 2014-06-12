@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+# The sole purpose of this script is to parse nmap xml output
+# and identify live web servers.
+
 require 'nokogiri'
 
 class NmapParser < Nokogiri::XML::SAX::Document
